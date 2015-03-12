@@ -1,7 +1,7 @@
 # Build & test OHHTTPStubs lib from the CLI
 
 task :ios, [:scheme, :ios_version, :action] do |_,args|
-  destination = "platform=iOS Simulator,id=A3312623-A36D-42FD-BB07-DD817F199572,OS=#{args.ios_version}"
+  destination = "platform=iOS Simulator,id=A3312623-A36D-42FD-BB07-DD817F199572"
   build("OHHTTPStubs #{args.scheme}", "iphonesimulator", destination, args.action)
 end
 
